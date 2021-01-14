@@ -36,7 +36,7 @@ for (let i = 0; i <= 24; i++) {
     const createdDiv = document.createElement('div')
     createdDiv.innerHTML = `${number}`
     createdDiv.setAttribute('class', 'cell unclicked')
-    // createdDiv.setAttribute('id', `cell-${xy}`)
+    createdDiv.setAttribute('id', `cell-${x}${y}`)
     mainGrid.appendChild(createdDiv)
 }
 console.log(bingoObj)
