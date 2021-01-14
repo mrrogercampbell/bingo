@@ -1,9 +1,30 @@
+/* body {
+    background-color: #243e90;
+}
+
+#greeting{
+    color: #f47d26;
+} */
+
+button {
+  background-color: #243e90;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
 
 #grid{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: 20px;
     background-color:lightcoral;
+    /* background-color: #f47d26; */
     padding: 10px;
     border-radius: 10%;
     margin: 5% 15%;
@@ -20,6 +41,7 @@
 .cell:hover{
     border-color: black;
 }
+
 
 .header:hover{
     border-color: transparent;
