@@ -1,12 +1,26 @@
 
+body {
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    width: 750px;
+    margin: auto;
+}
+
 #grid{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: 20px;
-    background-color:lightcoral;
+    border: 5px solid black; 
+    border-radius: 25px;
     padding: 10px;
-    border-radius: 10%;
-    margin: 5% 15%;
+}
+
+.board-head {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 20px;
+    margin: 20px auto;
+    border: 5px solid black;
+    border-radius: 25px;
 }
 
 .cell{
@@ -28,6 +42,7 @@
 .clicked{
     background-color: black;
     color: white;
+    opacity: 0.75;
 }
 
 .unclicked{
@@ -35,7 +50,7 @@
     color: black;
 }
 
-header {
+h1 {
     text-align: center;
-    margin-top: 5%;
+    margin: 30px auto;
 }
