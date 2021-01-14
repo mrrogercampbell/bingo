@@ -6,7 +6,7 @@
     background-color:lightcoral;
     padding: 10px;
     border-radius: 10%;
-    margin: 10%;
+    margin: 5% 15%;
 }
 
 .cell{
@@ -33,4 +33,9 @@
 .unclicked{
     background-color: transparent;
     color: black;
+}
+
+header {
+    text-align: center;
+    margin-top: 5%;
 }
