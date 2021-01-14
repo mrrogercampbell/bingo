@@ -1,0 +1,10 @@
+
+#grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.cell{
+    margin: auto;
+    border: 2px solid black;
+}
