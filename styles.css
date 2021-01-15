@@ -1,3 +1,23 @@
+/* body {
+    background-color: #243e90;
+}
+
+#greeting{
+    color: #f47d26;
+} */
+
+button {
+  background-color: #243e90;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
 
 body {
     background: linear-gradient(to right, #00AAFF, #00FF6C);
@@ -34,6 +54,7 @@ body {
 .cell:hover{
     border-color: black;
 }
+
 
 .header:hover{
     border-color: transparent;

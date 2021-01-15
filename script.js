@@ -25,18 +25,16 @@ const bingoObj = [
     { number: 60, x: 3, y: 5 },
     { number: 71, x: 4, y: 5 },
 ]
+const mainGrid = document.querySelector('#grid')
 
-// create a clickEvent that changes 'unclicked' to 'click' and vice-versa
-const handleClick = (e) => {
+const handleBingoClick = (e) => {
     let cell = e.target
     cell.className == 'cell unclicked' ? cell.setAttribute('class', 'cell clicked') : cell.setAttribute('class', 'cell unclicked')
 
 }
 
-// need a prompt that ask for user input and then present their name at the top of the html page
 
 
-const mainGrid = document.querySelector('#grid')
 for (let i = 0; i <= 24; i++) {
     let { number, x, y } = bingoObj[i]
 
@@ -44,7 +42,16 @@ for (let i = 0; i <= 24; i++) {
     createdDiv.innerHTML = `${number}`
     createdDiv.setAttribute('class', 'cell unclicked')
     createdDiv.setAttribute('id', `cell-${x}${y}`)
-    createdDiv.addEventListener('click', handleClick)
+    createdDiv.addEventListener('click', handleBingoClick)
     mainGrid.appendChild(createdDiv)
 }
-console.log(bingoObj)
+
+
+const handleSetUserName = (e) => {
+    let greetingTag = document.querySelector('#greeting')
+    let usersName = prompt('Welcome to Code Differently Bingo! What is your name?')
+
+    greetingTag.innerHTML = `Welcome to Bingo ${usersName}!`
+}
+
+handleSetUserName()
